@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>3</title>
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <meta name="viewport" content="width=width-device, initial-scale=1">
+  	<style>
+  		body {
+  			font-family: 'PT Sans', sans-serif;
+  font-size: 14px;
+  color: #333;
+  line-height: 22px;
+  margin:0;
+  background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(89,148,235,0.26404065043986347) 100%);
+
+  		}
+  		.btn-outline-secondary {
+  			background-color: white;
+  		}
+  		.top-col {
+  			display: flex;
+  			gap:60px;
+        margin-bottom: 40px;
+  		}
+  		.container-fluid {
+  			margin-top: 10px;
+  			width:95%;
+  		}
+  		.text-top {
+  			padding-top: 10px;
+  			font-size: 15px;
+  			width:40px;
+  		}
+  		.mb-3 {
+  		
+  			height: 50px;
+  		}
+  		.custom-select {
+  			height: 50px;
+  		}
+  		.ascend {
+  			background-color: white;
+  		}
+  		.table {
+  			vertical-align: middle;
+  		}
+  		.text-table {
+  			text-align: center;
+  		}
+  		
+  		.th-row{
+  			display: flex;
+  		}
+  		.favicon {
+  			width:10%;
+  			height: 100%;
+  			text-align: right;
+  		}
+  		.table-span {
+  			width:90%;
+  			height: 100%;
+  		}
+  		.bi-arrow-down-up {
+  			float: right;
+  		}
+  		.bi {
+  			vertical-align: middle;
+  		}
+  		.return {
+			width:100%;
+			text-align: center;
+		}
+		a {
+			text-decoration: none;
+			color:white;
+		}
+  	</style>	
+</head>
+<body>
+	<div class="return"><button type="button" class="btn btn-info"><a href="index.html">Вернуться на главную страницу</a></button></div>
+
+<div class="container-fluid">
+  <div class="row top-container">
+    <div class="col-12 col-md-12 top-col">
+    	
+    	<div class="text-top">Filter</div>
+    	<div class="input-group mb-3">
+		<input type="text" class="form-control" placeholder="Type to search a game" aria-label="" aria-describedby="button-addon2">
+ 		<div class="input-group-append">
+   		<button class="btn btn-outline-secondary" type="button" id="button-addon2">Clear</button>
+  		</div>
+	
+	</div>
+	</div>
+    <div class="col top-col">
+    	<div class="text-top">Sort</div>
+    	<div class="input-group mb-3">
+
+  		<select class="custom-select " id="inputGroupSelect01">
+    	<option selected>--none--</option>
+    	<option value="1">One</option>
+    	<option value="2">Two</option>
+    	<option value="3">Three</option>
+ 		</select>
+ 		<div class="input-group mb-3 " style="width:80px; ">
+ 		 <select class="custom-select ascend" id="inputGroupSelect02" >
+  		<option selected >ASC</option>
+   	 	<option value="1">One</option>
+  	  	<option value="2">Two</option>
+   		<option value="3">Three</option>
+  		</select>
+		</div>
+		</div>
+		
+    </div>
+    <div class="w-100"></div>
+    <div class="col top-col">
+    	<div class="text-top">Sort direction</div>
+    	<div class="input-group mb-3 " style="width:80px; ">
+ 		 <select class="custom-select " id="inputGroupSelect02" >
+  		<option selected >ASC</option>
+   	 	<option value="1">DSC</option>
+  	  	
+  		</select>
+		</div>
+
+    </div>
+    
+
+
+    </div>
+  </div>
+  <table class="table ">
+  	<thead>
+  		<tr>
+  			<th >Name of the Game <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-up" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M11.5 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L11 2.707V14.5a.5.5 0 0 0 .5.5zm-7-14a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L4 13.293V1.5a.5.5 0 0 1 .5-.5z"/>
+</svg></th>	
+  			<th class="text-table ">Price 
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-down-up" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M11.5 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L11 2.707V14.5a.5.5 0 0 0 .5.5zm-7-14a.5.5 0 0 1 .5.5v11.793l3.146-3.147a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 .708-.708L4 13.293V1.5a.5.5 0 0 1 .5-.5z"/>
+</svg>
+  			</th>	
+  			<th class="text-table">Available</th>	
+  			<th>Actions</th>	
+  		</tr>
+  	</thead>
+  	<tr>
+  		<td>Cyberpunk</td>
+  		<td class="text-table">40$</td>
+  		<td class="text-table">Yes</td>
+  		<td><button type="button" class="btn btn-secondary">Info modal</button> <button type="button" class="btn btn-secondary">Show details</button></td>
+  	</tr>
+	<tr>
+  		<td>Assassin's Creed</td>
+  		<td class="text-table">21$</td>
+  		<td class="text-table">No</td>
+  		<td><button type="button" class="btn btn-secondary">Info modal</button> <button type="button" class="btn btn-secondary">Show details</button></td>
+  	</tr>
+  	<tr >
+  		<td>Call of Duty</td>
+  		<td class="text-table">9$</td>
+  		<td class="text-table">No</td>
+  		<td><button type="button" class="btn btn-secondary">Info modal</button> <button type="button" class="btn btn-secondary">Show details</button></td>
+  	</tr>
+  	<tr>
+  		<td>Fallout 4</td>
+  		<td class="text-table">89$</td>
+  		<td class="text-table">No</td>
+  		<td><button type="button" class="btn btn-secondary">Info modal</button> <button type="button" class="btn btn-secondary">Show details</button></td>
+  	</tr>
+  	<tr>
+  		<td>Ghost Master</td>
+  		<td class="text-table">38$</td>
+  		<td class="text-table">Yes</td>
+  		<td><button type="button" class="btn btn-secondary">Info modal</button> <button type="button" class="btn btn-secondary">Show details</button></td>
+  	</tr>
+  </table>
+  <div>
+  	
+<ul class="pagination pagination-sm">
+	<li class="page-item"><a class="page-link" href="#"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-left" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M8.354 1.646a.5.5 0 0 1 0 .708L2.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+  <path fill-rule="evenodd" d="M12.354 1.646a.5.5 0 0 1 0 .708L6.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+</svg></a></li>
+	<li class="page-item"><a class="page-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-left" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M9.224 1.553a.5.5 0 0 1 .223.67L6.56 8l2.888 5.776a.5.5 0 1 1-.894.448l-3-6a.5.5 0 0 1 0-.448l3-6a.5.5 0 0 1 .67-.223z"/>
+</svg></a></li>
+    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+    <li class="page-item"><a class="page-link" href="#">2</a></li>
+    <li class="page-item"><a class="page-link" href="#">3</a></li>
+  <li class="page-item"><a class="page-link" href="#">4</a></li>
+  <li class="page-item"><a class="page-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-compact-right" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M6.776 1.553a.5.5 0 0 1 .671.223l3 6a.5.5 0 0 1 0 .448l-3 6a.5.5 0 1 1-.894-.448L9.44 8 6.553 2.224a.5.5 0 0 1 .223-.671z"/>
+</svg></a></li>
+  <li class="page-item"><a class="page-link" href="#"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-double-right" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M3.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L9.293 8 3.646 2.354a.5.5 0 0 1 0-.708z"/>
+  <path fill-rule="evenodd" d="M7.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L13.293 8 7.646 2.354a.5.5 0 0 1 0-.708z"/>
+</svg></a></li>
+  </ul>
+
+  </div>
+</body>
+</html>

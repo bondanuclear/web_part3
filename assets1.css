@@ -1,0 +1,431 @@
+body {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 14px;
+  color: #333;
+  line-height: 22px;
+  margin:0;
+  background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(89,148,235,0.26404065043986347) 100%);
+
+}
+.container-fluid {
+	width:100%;
+}
+
+.number-container {
+	margin-bottom: 15px;
+}
+.top-part {
+	margin:0 auto;
+  	justify-content: center;
+}
+.intro-top-left {
+	display: flex;
+	flex-direction: row;
+	gap:15px;
+	margin-bottom: 65px;
+  margin-top:65px;
+  padding-top:30px; 
+}
+.intro-top-center {
+	font-family: 'Open Sans Condensed', sans-serif;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	justify-content: center;
+	margin-top:-10px;
+	line-height: 40px;
+}
+.top-right-number {
+	font-size:32px;
+
+}
+.square {
+  width:100px;
+  height: 100px;
+  background-image: url(https://cdn.worldvectorlogo.com/logos/asus-rog-1.svg);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+.top-menu {
+border:1px solid blue;
+background: linear-gradient(#e66465, #9198e5);
+display: flex;
+flex-direction: row;
+}
+
+
+.menu-list {
+	width: 100%;
+	list-style: none;
+		display: flex;
+		justify-content: space-around;
+	align-items:  center;
+	margin-top: 5px;
+	font-size: 15px;
+
+}
+.menu-item {
+	border-right: 3px solid white;
+	color:white;
+
+	margin-right: 10px;
+	padding-right: 10px;
+}
+.menu-item a {
+	color:white;
+}
+.top-right-feedback {
+	float:right;
+}
+.slide {
+  position: relative;
+  padding: 0px;
+}
+.slide1,.slide2,.slide3,.slide4 {
+  width:100%;
+  height: 400px;
+  display: block;
+  position: absolute;
+  top:0px;
+
+}
+.slide1 {
+  animation: fade1 25s linear infinite;
+}
+.slide2 {
+  animation: fade2 25s linear infinite;
+}
+.slide3 {
+  animation: fade3 25s linear infinite;
+}
+.slide4 {
+  animation: fade4 25s linear infinite;
+}
+@keyframes fade1 {
+  0% {
+    opacity:1;
+  }
+  25% {
+    opacity:0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75%{
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade2 {
+  0% {
+    opacity:0;
+  }
+  25% {
+    opacity:1;
+  }
+  50% {
+    opacity: 0;
+  }
+  75%{
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fade3 {
+  0% {
+    opacity:0;
+  }
+  25% {
+    opacity:0;
+  }
+  50% {
+    opacity: 1;
+  }
+  75%{
+    opacity: 0;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes fade4 {
+  0% {
+    opacity:0;
+  }
+  25% {
+    opacity:0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75%{
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.slider {
+	padding: 0px;
+	height:400px;
+
+}
+
+.catalog {
+margin:0 auto;
+  	justify-content: center;
+}
+.leftblock-catalog-menu-list {
+  list-style-type: none;
+  margin-top: 0px;
+}
+.leftblock-PC-sublist-item-first {
+  font-weight: bold;
+  text-decoration: underline;
+}
+.leftblock-PC-sublist-item a {
+  color:red;
+}
+.leftblock-PC-sublist-item-sl-first a{
+  color:red;
+}
+.leftblock-PC-sublist-item-second {
+  font-weight: bold;
+  text-decoration: underline;
+}
+.leftblock-PC-sublist-item-second a {
+    color:red;
+}
+.action-href a {
+  text-decoration: none;
+}
+.leftblock-container-pricelist {
+display: flex;
+flex-direction: column;
+}
+.leftblock-container-pricelist-image {
+
+	width: 97px;
+  height: 95px;
+
+  background-image: url(https://img.icons8.com/ios/452/ms-excel.png);
+  background-size: cover;
+    background-position: center;
+    box-shadow: 0 3px rgba(0, 0, 0, 0.4);
+    float:left;
+}
+.game-catalog {
+
+}
+.game-cards {
+  padding: 0px;
+  margin-right: 0px;
+  border:3px solid white;
+  height: 380px;  
+  padding-left: 2px;
+  background: linear-gradient(#e66465, #9198e5);
+}
+.centerblock-game-image {
+  
+  height: 210px;
+  text-align: center;
+}
+.image-game {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+.col-md-3 {
+  padding: 0;
+}
+.img-thumbnail {
+   width:190px;
+}
+.centerblock-game-text{
+  padding-left: 10px;
+  text-align: left;
+  font-size: 20px;
+  margin-top:10px;
+}
+.price-and-buy {
+  display: flex;
+position: absolute;
+bottom: 0;  
+ /*margin:5px;
+ margin-right: 10px;*/
+}
+.centerblock-game-price {
+  font-weight: bold;
+  font-size: 20px;
+}
+.centerblock-game-buy {
+  
+}
+.game_checkbox {
+  width:30px;
+  height: 30px;
+  border-radius: 20px;
+ background-image: url(https://icons-for-free.com/iconfiles/png/512/buy-131964784705748631.png);
+   background-size: cover;
+    background-position: center;
+ /* border:1px solid black;*/
+}
+.centerblock-game-buy input[type=checkbox]{
+   display: none
+}
+.centerblock-game-buy input[type=checkbox]:checked + .game_checkbox {
+  background-color: rgba(208, 115, 139, 0.7);
+
+}
+.center-block-pages-list {
+  display: flex;
+  list-style-type: none;
+  justify-content: center;
+  gap: 15px;
+  
+}
+.up-list {
+	
+}
+.center-block-pages-item a{
+  color:black;
+}
+.chosen-page {
+  font-size: 18px;
+}
+.text-container {
+	margin:0 auto;
+	border-top: 1px solid grey;
+}
+.about-company {
+	margin-bottom: 20px;
+}
+.asus-subtext {
+	margin-bottom: 30px;
+}
+.footer {
+	justify-content: center;
+	background: linear-gradient(#e66465, #9198e5);
+	padding-top: 20px;
+	color: white;
+}
+.block-right {
+	float:right;
+}
+.footer-center-list,.footer-center-list a{
+  list-style-type: none;
+  
+  color: white;
+}
+.modal-bg {
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.5);
+  display:  flex;
+  justify-content: center;
+  align-items:  center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 1s; 
+
+}
+.send {
+font-size: 10px;
+}
+.modal-bg2{
+  position: fixed;
+  top:0;
+  left:0;
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.5);
+  display:  flex;
+  justify-content: center;
+  align-items:  center;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 1s; 
+}
+.bg-active {
+  visibility: visible;
+  opacity: 1;
+}
+.modal {
+  background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(89,148,235,0.9) 100%);
+  width: 50%;
+ 
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+
+}
+.modal2 {
+background-color: rgba(255, 248, 255, 0.9);
+  width: 50%;
+ line-height: 15px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  padding: 50px 0 50px 0;
+}
+.feedback-input {
+  width:90%;
+  border-radius: 20px;
+}
+
+textarea {
+  width: 90%
+}
+.modal button {
+  padding:10px 30px;
+  background: linear-gradient(#e66465, #9198e5);
+  color:white;
+  border:none;
+  cursor:pointer;
+
+}
+.modal-close,.modal-close2 {
+position: absolute;
+top:0;
+right: 0;
+font-weight: bold;
+cursor: pointer;
+} 
+.modal-btn,.modal-btn2  {
+	background-color: transparent;
+}
+.total_sum {
+  position: fixed;
+  right:60px;
+  bottom: 0;
+  width:50px;
+  margin-right:25px;
+}
+.total {
+  border-radius: 15px;
+  background-color:rgb(245, 245, 220);
+  color:black;
+}
+.icon-container {
+  
+  padding: 7px 0;
+  font-size: 24px;
+}
+.modal2 input[type=text]{
+  border-radius: 20px;
+
+}

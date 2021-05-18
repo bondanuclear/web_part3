@@ -1,0 +1,552 @@
+body {
+	font-family: 'PT Sans', sans-serif;
+	font-size: 14px;
+	color: #333;
+	line-height: 22px;
+	margin:0;
+background: rgb(238,174,202);
+background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(89,148,235,0.26404065043986347) 100%);
+}
+* {
+  box-sizing: border-box;
+  }
+.container-fluid {
+	width:100%;
+	margin: 0 auto;
+	position: relative;
+	padding-right:0px;
+	padding-left:0px;
+}
+.project {
+	width:100%;
+	margin: 0 auto;
+	position: relative;
+}
+.intro{
+	height: 230px;
+
+}
+.menu {
+	height: 80px;
+background: linear-gradient(#e66465, #9198e5);
+position: absolute;
+top:230px;
+}
+.slider {
+	height:400px;
+	position: absolute;
+	top:310px;
+		border:1px solid black;
+}
+.slide {
+	position: relative;
+}
+.state {
+	height:30px;
+	position: absolute;
+	top: 400px;
+	width: 100%;
+}
+.container {
+	width:1000px;
+	margin: 0 auto;
+	position: relative;
+
+}
+.piece-intro{
+	height:230px;
+}
+.container-top-intro-left {
+	width:275px;
+	height:100px;
+	margin-bottom: 65px;
+	margin-top:65px;
+	/*border:1px solid red;*/
+	margin-left:10px;
+	position: absolute;
+	left: 0;
+	display: flex;
+}
+.container-top-intro-right {
+	font-family: 'Open Sans Condensed', sans-serif;
+	width:250px;
+	height: 80px;
+	/*border:1px solid red;*/
+	margin-top: 45px;
+	margin-bottom: 104px;
+	position: absolute;
+	right:0;
+	margin-right:10px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items:stretch;
+
+	}
+.container-top-intro-feedback {
+	width:180px;
+	height:25px;
+	position: absolute;
+	right:0;
+	margin-right:10px;
+	margin-top:136px;
+	margin-bottom:72px;
+	/*border:1px solid red;*/
+	display: flex;
+	align-content: stretch; 
+	padding-top: 0;
+}
+
+.piece-menu {
+	/*border:1px solid green;*/
+	height: 80px;
+}
+.text-container {
+width:910px;
+height: 25px;
+margin-left: 45px;
+position: absolute;
+font-size: 30px;
+margin-top:26px;
+
+}
+.menu-text {
+	display: flex;
+	justify-content: space-between;
+	align-content: flex-end;
+	margin-top:0;
+}
+a{
+	text-decoration: none;
+}
+.list a:hover {
+text-decoration: underline;
+}
+.text-item, .text-item-last {
+	list-style-type: none;
+}
+.text-item a {
+	border-right: 3px solid white;
+	padding-right:20px;
+	text-decoration: none;
+	color: white;
+}
+.text-item-last a {
+	border-right: none;
+	color: white;
+
+}
+.square {
+	width:100px;
+	height: 100px;
+	background-image: url(https://cdn.worldvectorlogo.com/logos/asus-rog-1.svg);
+	background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+
+}
+.top-left {
+	display:flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	margin-left:15px;
+	color:grey;
+}
+#Bigger-text {
+	font-size: 30px;
+}
+.top-right-number {
+	color:grey;
+	font-size: 40px;
+	position: relative;
+	right:0;
+}
+.top-feedback {
+color:rgb(60, 60, 60);
+font-size: 25px;
+text-decoration: underline dotted;
+}
+.slide1,.slide2,.slide3,.slide4 {
+	width:100%;
+	height: 400px;
+	display: block;
+	position: absolute;
+	top:0px;
+}
+.slide1 {
+	animation: fade1 25s linear infinite;
+}
+.slide2 {
+	animation: fade2 25s linear infinite;
+}
+.slide3 {
+	animation: fade3 25s linear infinite;
+}
+.slide4 {
+	animation: fade4 25s linear infinite;
+}
+@keyframes fade1 {
+	0% {
+		opacity:1;
+	}
+	25% {
+		opacity:0;
+	}
+	50% {
+		opacity: 0;
+	}
+	75%{
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes fade2 {
+	0% {
+		opacity:0;
+	}
+	25% {
+		opacity:1;
+	}
+	50% {
+		opacity: 0;
+	}
+	75%{
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@keyframes fade3 {
+	0% {
+		opacity:0;
+	}
+	25% {
+		opacity:0;
+	}
+	50% {
+		opacity: 1;
+	}
+	75%{
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@keyframes fade4 {
+	0% {
+		opacity:0;
+	}
+	25% {
+		opacity:0;
+	}
+	50% {
+		opacity: 0;
+	}
+	75%{
+		opacity: 1;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+.piece-state {
+	/*border:1px solid blue;*/
+	height:30px;
+}
+.content-state{
+	margin-left:10px;
+	/*border:1px solid red;*/
+	height:30px;
+	display: flex;
+
+	position: absolute;
+	left:0;
+}
+.content-state-list {
+	list-style-type: none;
+	display: flex;
+	margin-top:0;
+	padding:0;
+	font-size: 14px;
+}
+.content-state-item {
+	text-decoration: underline;
+}
+.blank-space {
+	width:100%;
+	height: 22px;
+	position: relative;
+	/*border:1px solid red;*/
+}
+.catalog {
+	height:1335px;
+	position: absolute;
+	top:420px;
+	margin-top: 22px;
+}
+.piece-catalog {
+	height: 1335px;
+	
+	}
+.left-container-catalog {
+	width:200px;
+	height: 1335px;
+	/*border:1px solid green;*/
+	margin-left:10px;
+	position: absolute;
+	color:RGBA(255,0,0,0.66);
+}
+.center-container-catalog {
+	width:780px;
+	height:1335px;
+	/*border:1px solid black;*/
+
+	position: absolute;
+	left:210px;
+}
+.leftblock-catalog-menu-list {
+	list-style-type: none;
+	margin-top: 0px;
+}
+.leftblock-PC-sublist-item-first {
+	font-weight: bold;
+	text-decoration: underline;
+}
+.leftblock-PC-sublist-item a {
+	color:red;
+}
+.leftblock-PC-sublist-item-sl-first a{
+	color:red;
+}
+.leftblock-PC-sublist-item-second {
+	font-weight: bold;
+	text-decoration: underline;
+}
+.leftblock-PC-sublist-item-second a {
+		color:red;
+}
+.action-href a {
+	text-decoration: none;
+}
+.leftblock-container-pricelist {
+	/*border:1px solid red;*/
+	height: 150px;
+	width:200px;
+	margin-top:110px;
+}
+.leftblock-container-pricelist-image {
+	width: 97px;
+	height: 95px;
+	margin: 0 auto;
+	background-image: url(https://img.icons8.com/ios/452/ms-excel.png);
+	background-size: cover;
+    background-position: center;
+    box-shadow: 0 3px rgba(0, 0, 0, 0.4);
+
+}
+.leftblock-container-pricelist-text {
+	text-align: center;
+}
+.piece-centerblock-catalog {
+width:780px;
+height: 785px;
+/*border:2px solid purple;*/
+display: flex;
+flex-wrap: wrap;
+gap:13px;
+align-content: stretch;
+}
+.centerblock-catalog-game {
+width: 250px;
+height: 380px;
+color: rgba(78,86,250,0.66);
+/*border:1px solid black;*/
+background-image: linear-gradient(to top, #dd1453, #e15588, #dc81b2, #d6a8cd, #d6cadb);
+}
+/*1 блок  
+    */
+    .image-container {
+    margin: 0 auto;
+	width:210px;
+	height: 210px;
+/*border:1px solid red;*/
+
+    }
+.centerblock-game-image {
+	width:210px;
+	height: 210px;
+	margin: 0 auto;
+}
+.image-game {
+	object-fit: contain;
+	width: 100%;
+	height: 100%;
+}
+
+.centerblock-game-text{
+	text-align: center;
+	font-size: 20px;
+	margin-top:10px;
+}
+.price-and-buy {
+	display: flex;
+	
+	margin-top: 80px;
+
+	justify-content: space-around;
+}
+.centerblock-game-price {
+	font-weight: bold;
+	font-size: 30px;
+}
+.centerblock-game-buy {
+	background-image: url(https://icons-for-free.com/iconfiles/png/512/buy-131964784705748631.png);
+	background-size: cover;
+    background-position: center;
+    width:30px;
+    height: 30px;
+}
+.center-block-pages-list {
+	display: flex;
+	list-style-type: none;
+	justify-content: center;
+	gap: 15px;
+}
+.center-block-pages-item a{
+	color:black;
+}
+.chosen-page {
+	font-size: 18px;
+}
+.center-block-pages {
+	height: 108px;
+	border-bottom : 2px solid red;
+}
+.container-text-asus-company {
+	
+	color:gray;
+	display: flex;
+	justify-content: space-between;
+}
+.container-block-left {
+	width:370px;
+}
+.container-block-right {
+	width:370px;
+}
+.footer {
+	height: 220px;
+	background-color: grey;
+	position: absolute;
+	top:1785px;
+	color:white;
+}
+.piece-footer {
+	height:220px;
+	display: flex;
+
+}
+.footer-left-block {
+	margin-left:10px;
+	/*border:1px solid black;*/
+	width:350px;
+	height:220px;
+	padding-top: 50px;
+}
+.footer-center-block {
+	width:260px;
+	
+	/*border:1px solid red;*/
+	padding-top: 35px;
+
+}
+.footer-right-block {
+	width:370px;
+	/*border:1px solid black;*/
+		padding-top: 50px;
+
+}
+.footer-center-list,.footer-center-list a{
+	list-style-type: none;
+	padding:0;
+	color: white;
+}
+
+.footer-center-item {
+	text-decoration: underline;
+}
+.footer-right-block-container {
+	display: flex;
+	justify-content: flex-end;
+	gap:5px;
+}
+.footer-right-block-image {
+	background-image: url(https://is5-ssl.mzstatic.com/image/thumb/Purple124/v4/8b/e1/3c/8be13c2a-f86b-5887-8779-fb8222cd3747/source/512x512bb.jpg);
+	background-size: cover;
+    background-position: center;
+    height: 40px;
+    width: 40px;
+}
+.footer-right-block-text a {
+	color: white;
+	text-decoration: underline;
+}
+.modal-btn {
+position: absolute;
+right:0;
+background-color: transparent;
+border:none;
+}
+.modal-bg {
+	position: fixed;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 100vh;
+	background-color: rgba(0,0,0,0.5);
+	display:  flex;
+	justify-content: center;
+	align-items:  center;
+	visibility: hidden;
+	opacity: 0;
+	transition: visibility 0s, opacity 1s; 
+
+}
+.bg-active {
+	visibility: visible;
+	opacity: 1;
+}
+.modal {
+	background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(89,148,235,0.9) 100%);
+	width: 465px;
+	height: 580px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	flex-direction: column;
+	position: relative;
+}
+.feedback-input {
+	width:90%;
+}
+textarea {
+	width: 90%
+}
+.modal button {
+	padding:10px 30px;
+	background: linear-gradient(#e66465, #9198e5);
+	color:white;
+	border:none;
+	cursor:pointer;
+}
+.modal-close {
+position: absolute;
+top:0;
+right: 0;
+font-weight: bold;
+cursor: pointer;
+}
