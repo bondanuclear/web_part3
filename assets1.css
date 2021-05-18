@@ -405,7 +405,7 @@ right: 0;
 font-weight: bold;
 cursor: pointer;
 } 
-.modal-btn,.modal-btn2  {
+.modal-btn  {
 	background-color: transparent;
 }
 .total_sum {
